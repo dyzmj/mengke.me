@@ -1,0 +1,324 @@
+# Instincts generated from https://github.com/dyzmj/mengke.me
+# Generated: 2026-05-17T20:26:31.277Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: mengke.me-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat, docs, fix
+
+## Evidence
+
+- 4 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat(component): add Plyr-based video player for MDX posts, docs(blog): add new blog post on health scare and hospitalization (Youth Is Not A Health Pass)
+
+---
+id: mengke.me-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Commit Length
+
+## Action
+
+Write moderate-length commit messages (~78 characters)
+
+## Evidence
+
+- Average commit message length: 78 chars
+- Based on 4 commits
+
+---
+id: mengke.me-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: mengke.me-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: mengke.me-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: mengke.me-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: mengke.me-workflow-add-or-update-blog-post-with-images
+trigger: "when doing add or update blog post with images"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/mengke.me
+---
+
+# Mengke.me Workflow Add Or Update Blog Post With Images
+
+## Action
+
+Follow the add-or-update-blog-post-with-images workflow:
+1. Create or modify an MDX file for the blog post in data/blog/YYYYMM/Post_Title.mdx
+2. Add or update associated images/videos in public/static/images/blog/YYYYMM/Post_Title/
+3. Update tag or metadata files as needed (e.g., json/tag-data.json)
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: data/blog/YYYYMM/Post_Title.mdx, public/static/images/blog/YYYYMM/Post_Title/*.{jpg,jpeg,png,mp4}, json/tag-data.json
+
+---
+id: mengke.me-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: mengke.me-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: mengke.me-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: mengke.me-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: mengke.me-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Import Style
+
+## Action
+
+Use alias import style
+
+## Evidence
+
+- Pattern in importStyle: alias
+
+---
+id: mengke.me-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: mengke.me-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Git Commit Format
+
+## Action
+
+Use conventional commit format with a prefix (feat, fix, docs), optional scope, and a concise description
+
+## Evidence
+
+- Seen in commit: feat(component): add Plyr-based video player for MDX posts
+- Pattern in commits.prefixes: [feat, docs, fix]
+
+---
+id: mengke.me-instinct-git-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 78 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength: 78
+
+---
+id: mengke.me-instinct-blog-post-workflow
+trigger: "When publishing a new blog post or updating an existing post's content or image formats"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/mengke.me
+---
+
+# Mengke.me Instinct Blog Post Workflow
+
+## Action
+
+Create or modify the MDX file in data/blog/YYYYMM/Post_Title.mdx, add or update images/videos in public/static/images/blog/YYYYMM/Post_Title/, and update tag or metadata files as needed (e.g., json/tag-data.json)
+
+## Evidence
+
+- Workflow: add-or-update-blog-post-with-images
+- Commit: fix(blog): update image formats in "Youth Is Not A Health Pass" post from JPG to JPEG
+
