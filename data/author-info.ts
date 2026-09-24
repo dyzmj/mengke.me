@@ -23,7 +23,6 @@ export const AUTHOR_INFO = {
     linkedin: '/',
     threads: 'https://www.threads.net/@_mk965',
     instagram: '/',
-    juejin: 'https://www.juejin.cn/user/4037062430299912#/Mengke',
   },
   support: {
     kofi: 'https://ko-fi.com/mengke',

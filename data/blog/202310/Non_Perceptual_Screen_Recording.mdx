@@ -13,8 +13,6 @@ authors: ['default']
 
 ## 前言
 
-[掘金地址](https://juejin.cn/post/7293462197386592283)
-
 要在 JavaScript 中实现屏幕录制，可以使用 `navigator.mediaDevices.getDisplayMedia()` 方法来获取屏幕的媒体流。然后，可使用 `MediaRecorder` 对象将媒体流录制为视频文件。
 
 但该方法会在浏览器弹出一个授权窗口，让用户选择要分享的内容，这不可实现“无感知”。
@@ -28,8 +26,6 @@ authors: ['default']
 那我们换一个思路，视频是由帧组成的，我们是否可以不断的截图，然后组合成一段视频？好像是可以的。
 
 ## 效果
-
-[去「码上掘金」查看](https://code.juejin.cn/pen/7293465912663867419)
 
 ## 页面
 
